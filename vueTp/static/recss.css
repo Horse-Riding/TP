@@ -1,0 +1,51 @@
+/*滚动条样式重置*/
+::-webkit-scrollbar {
+  width:4px;
+  height:4px
+}
+::-webkit-scrollbar-button {
+  background-color:none
+}
+::-webkit-scrollbar-track {
+  background:#fff
+}
+::-webkit-scrollbar-track-piece {
+}::-webkit-scrollbar-thumb {
+   background:#ccc;
+   cursor:pointer;
+   border-radius:2px
+ }
+::-webkit-scrollbar-corner {
+  background:#ccc
+}
+::-webkit-scrollbar-resizer {
+  background:#ccc
+}
+/*操作按钮*/
+.ivu-icon-close-round{
+  cursor:pointer;
+}
+.ivu-icon-close-round:hover{
+  color:#666;
+}
+/***************************** wang-editor 汉化************************/
+.w-e-text-container{
+  z-index: 99!important;
+}
+.w-e-text-container span{
+  color: #000;
+}
+.w-e-text-container table{
+  margin: 5px auto;
+  text-align:center;
+}
+.w-e-menu{
+  z-index: 100!important;
+}
+.w-e-toolbar{
+  background-color:#fff!important;
+}
+.w-e-text {
+  padding: 10px;
+}
+/***************************** quill-editor 汉化结束************************/

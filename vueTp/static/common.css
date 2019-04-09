@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+* {
+  font-size:12px;
+}
+h1, h2, h3, h4, h5, h6, th { font-weight: normal;}
+h1{
+  font-size:24px
+}
+h2{
+  font-size:22px
+}
+h3 {
+  font-size:20px
+}
+h4{
+  font-size:18px
+}
+h5{
+  font-size:16px
+}
+/*公共连接样式*/
+.alink{
+  color:#00bfff;
+  cursor:pointer;
+}
+.alink:hover{
+  opacity:0.7;
+}
+/*body*/
+.notextselect *{
+  moz-user-select: -moz-nones;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+/*展示列表样式1*/
+.list-wrap-s1 {
+  width:100%;
+}
+.list-wrap-s1 li{
+  width: 100%;
+  min-height: 24px;
+  padding: 5px 0px;
+  margin: 10px 0;
+  line-height: 24px;
+  position: relative;
+  padding-left: 115px;
+  clear:both;
+}
+.list-wrap-s1 li label{
+  width: 115px;
+  float: left;
+  padding: 0 5px;
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+.list-wrap-s1 li .item-con{
+  font-size: 12px;
+  color: #666;
+}
+/*清除谷歌输入框黄色背景*/
+/*input:-webkit-autofill,*/
+/*input:-webkit-autofill:hover,*/
+/*input:-webkit-autofill:focus {*/
+  /*box-shadow:0 0 0 60px #eee inset;*/
+  /*-webkit-text-fill-color: #878787;*/
+/*}*/
+* {
+  outline: 0!important;
+}
+/*内容模板1*/
+.content-st1{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.content-header-st1{
+  height:50px;
+  line-height:50px;
+  padding:8px 20px;
+  width:100%;
+  border-bottom:1px solid #dddee1;
+}
+.content-header-st1 h1{
+  font-size:16px;
+  color:#333;
+  line-height:34px;
+  display:inline-block;
+  float:left;
+  margin-right:10px;
+}
+.content-body-st1{
+  position:absolute;
+  overflow-y:auto;
+  left:0;
+  right:0;
+  top:51px;
+  bottom:0px;
+}
+
