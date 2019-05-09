@@ -5,7 +5,7 @@ class Index
 {
     public function index()
     {
-        return '1111';
+        return '11121';
     }
     public function demo()
     {
