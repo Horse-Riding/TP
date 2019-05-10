@@ -7,7 +7,7 @@ class Index
 {
     public function index()
     {
-        return 'admin';
+        dump(config());
     }
     public function demo()
     {

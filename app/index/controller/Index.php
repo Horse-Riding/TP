@@ -5,10 +5,15 @@ class Index
 {
     public function index()
     {
-        return '11121';
+        dump(config());
     }
-    public function demo()
+    public function index1()
     {
-        return '222';
+        $conf1 = [
+        	'username' => 'wuyunlong'
+        ];
+        $conf2 = [
+
+        ];
     }
 }
