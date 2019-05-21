@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2019-05-20 18:01:29
+Date: 2019-05-21 16:45:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,17 +20,22 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `db_user`;
 CREATE TABLE `db_user` (
-  `id` int(11) NOT NULL DEFAULT '0',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(60) DEFAULT '',
   `password` char(32) DEFAULT '',
   `create_time` int(10) unsigned DEFAULT '0',
   `update_time` int(10) unsigned DEFAULT '0',
+  `delete_time` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of db_user
 -- ----------------------------
+INSERT INTO `db_user` VALUES ('1', '1771258', '914f21eb84c6fdb2b663dd6f453f65ca', '1558425368', '1558427727', '1558427727');
+INSERT INTO `db_user` VALUES ('2', 'imooc', '914f21eb84c6fdb2b663dd6f453f65ca', '1558425540', '1558425540', '0');
+INSERT INTO `db_user` VALUES ('3', 'imooc', '914f21eb84c6fdb2b663dd6f453f65ca', '1558426727', '1558426727', '0');
+INSERT INTO `db_user` VALUES ('4', 'imooc', '914f21eb84c6fdb2b663dd6f453f65ca', '1558426804', '1558426804', null);
 
 -- ----------------------------
 -- Table structure for `db_user_bak`

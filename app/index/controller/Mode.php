@@ -233,14 +233,41 @@
 			$res = $userModel->save();
 			dump($res);
 		}
-
+        
+        // ---------------新的数据库
 		// 模型时间戳和软删除
 		public function softDel() 
 		{
-			$res = User::create([
-				'name' => 'imooc',
-				'password' => dm5('imooc');
-			]);
-			dump($res);
+			// // 插入一条数据，验证自动添加时间戳方法生效
+			// // protected $autoWriteTimestamp = true;
+			// $res = User::create([
+			// 	'name' => 'imooc',
+			// 	'password' => md5('imooc')
+			// ]);
+			// dump($res);
+
+			// 更新数据时只会变更更新时间戳
+			// $user = User::get(1);
+			// $user->name = '1771258';
+			// $res = $user->save();
+			// dump($res);
+
+			// 软删除改写delete_time字段
+			$res = User::destroy(1);
+			// $res = User::get(1); //返回null 因为被软删除了
+
+			// //怎么查看被软删除了的数据
+			// $res =  User::withTrashed(true)->find(1);
+			// dump($res-getData());// 查看原始语句
+
+			// 获取所有被软删除的数据
+			$res = 	User::onlyTrashed()->select();
+			foreach($res as $val) {
+				dump($val->getData());
+			}
+			// 对于软删除的真正删除操作有两个
+			// 1、User::destroy(1, ture)
+			// 2、$user->delete(true);
 		}
+
 	}
